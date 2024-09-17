@@ -113,6 +113,58 @@
             margin-bottom: 20px;
         }
     </style>
+     <style>
+        #titulo {
+          font-family: cursive;
+          font-style: inherit;
+          font-weight: 900;
+          color: white;
+        }
+  
+        .container {
+          gap: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: auto;
+          max-width: 700px;
+        }
+        .parrafos {
+          max-width: 700px;
+          border: 1px solid black;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          background: linear-gradient(#7e9bd6, #8bda91);
+        }
+  
+        .content-parrafos {
+          margin: 10px 20px;
+        }
+  
+        .ex-ul1 {
+          display: flex;
+          justify-content: space-around;
+        }
+  
+        .ex-ul1 li {
+          list-style-type: none;
+          border: 1px solid;
+          padding: 10px 50px;
+          background-color: #00000091;
+          box-shadow: 2px 2px 2px black;
+        }
+  
+        li:hover {
+          background-color: rgb(226, 140, 140);
+          transition: all 0.5s;
+        }
+  
+        .ex-ul{
+  
+        }
+      </style>
 </head>
 <body>
     <h1>Bienvenido a Mi Proyecto 3D</h1>
@@ -144,6 +196,125 @@
             <p>Si tienes alguna pregunta o deseas más información, no dudes en <a href="mailto:info@tecnologiaavanzada.com">contactarnos</a>.</p>
         </section>
     </main>
+
+    <div class="container">
+        <div class="parrafos">
+          <p id="titulo">1. INICIALIZACION DEL REPOSITORIO LOCALMENTE:</p>
+  
+          <div class="content-parrafos">
+            <p>
+              Lo principal es tener instalado Git y tener conocimientos previos
+              conocimientos en la Consola o CMD el primer comando que debemos usar
+              para crear este repositorio es Git init, el cual va a crear una
+              carpeta git en el directorio actual esa carpeta tendrá todas Las
+              dependencias y archivos que necesita git para realizar sus procesos.
+            </p>
+  
+            <p>
+              El comando es: git init Git add o Git add folder o archivo Me
+              permite guardar los cambios realizados en esos archivos o carpetas
+              Git commit-m’name commit´ me permite colocarles un nombre a los
+              cambios Guardados anteriormente es muy potente ya que me permite
+              llevar un versionamiento De proyecto eje, cree un modelo los pasos a
+              seguir para guardarlos serian Git add modelo Commit para hacer la
+              doc o versionamiento de mi modelo Git commit -m ´creación modelo´
+            </p>
+          </div>
+  
+          <div>
+            <!-- Mira los div como contenedores o cajas para moldear tu HTML -->
+            <p style="color: white; font-size: 20px; font-weight: 900">
+              Comandos usados
+            </p>
+            <ul class="ex-ul1">
+              <li>Git Init</li>
+              <li>Git add .</li>
+              <li>Git Commit -m 'commit nombre'</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="parrafos">
+          <p id="titulo">2 CREACION DE BRANCHES:</p>
+  
+          <div class="content-parrafos">
+            <p>
+              El comando git Branch new_ Branch es para crear una nueva rama, la
+              cual nos va a Permitir el trabajo en equipo, sin dañarnos el trabajo
+              unos a otros, esto nos permite Llevar un mejor orden y nos da la
+              facilidad de tener un mejor trabajo en equipo Ya que si bien es
+              verdad todos vamos a estar trabajando en un mismo proyecto
+              Previamente clonado, cada integrante puede tener una rama para ir
+              trabajando en un Modulo en específico. Es muy potente esta
+              herramienta de las ramas ya que nos Permite unir las modificaciones
+              o cambios en una sola unidad con el comando Git merge Branch
+            </p>
+  
+            <p>
+              donde Branch es la rama con la que deseo combinar los cambios Es
+              decir, puede haber un conjunto de desarrolladores trabajando en
+              distintos módulos Y luego con este comando git merge puedo ir
+              uniendo los módulos me da la capacidad De que puedo ir depurando
+              mucho mejor los códigos y me ofrece la facilidad de Identificar
+              incompatibilidades al hacer este merge. en pocas palabras une
+              bloques De códigos en uno solo Git Branch new_ Branch Git merge
+              Branch
+            </p>
+  
+            <p>
+              E je punto 2 Supongamos que tenemos una app de un supermercado,
+              tengo 3 desarrolladores Los cuales están trabajando en distintos
+              módulos uno en la parte de administración Otro en la parte de
+              usuario y otro en los inventarios, se crea un repositorio para todo
+              el Proyecto y a cada uno se le crea una rama para diseñar el módulo
+              encargado. en un Principio el proyecto esta modularizado y con el
+              comando que me ofrece git que es el Merge puedo unir estos segmentos
+              módulos o bloques de código
+            </p>
+          </div>
+  
+          <div>
+            <!-- Mira los div como contenedores o cajas para moldear tu HTML -->
+            <p style="color: white; font-size: 20px; font-weight: 900">
+              Comandos usados
+            </p>
+            <ul class="ex-ul1">
+              <li>Git Branch new_ Branch</li>
+              <li>Git merge Branch</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="parrafos">
+          <p id="titulo">3 AGREGAR UN REPOSITORIO REMOTO:</p>
+  
+          <div class="content-parrafos">
+            <p>
+              Estos son los comandos necesarios para conectar mi repositorio a uno
+              remoto de GitHub
+            </p>
+          </div>
+  
+          <div>
+            <!-- Mira los div como contenedores o cajas para moldear tu HTML -->
+            <p style="color: white; font-size: 20px; font-weight: 900">
+              Comandos usados
+            </p>
+            <ul class="ex-ul1">
+              <li>Git Init</li>
+              <li>Git add .</li>
+              <li>Git Commit -m 'commit nombre'</li>
+            </ul>
+            <ul>
+              <li>git branch -M main</li>
+              <li>git push -u origin main</li>
+            </ul>
+            <ul>
+              <li>git remote add origin https://github.com/ejemplo/prueba_iud.iud.git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     <footer>
         <p>&copy; 2024 Tecnología Avanzada. Todos los derechos reservados.</p>
