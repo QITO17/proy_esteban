@@ -108,17 +108,38 @@
         bottom: 0;
       }
     
-      .content-section {
-        margin-bottom: 20px;
+      .content-section2 {
+        margin-bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
       }
       .content-section ul {
         list-style-type: disc;
         padding-left: 20px;
       }
 
-      .content-section {
-        margin-bottom: 20px;
+      .galeria{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 100px 0px ;
+        overflow: hidden; /* Oculta las imágenes que se desbordan */
+        position: relative;
       }
+
+      .img1-galeria{
+        max-width: 250px;
+        animation: slide 10s linear infinite;
+      }
+
+      .img1-galeria img{
+        width: 100%;
+      }
+
+    
     </style>
     <style>
       #titulo {
@@ -232,14 +253,17 @@
         </ul>
       </section>
 
-      <section id="contacto" class="content-section">
-        <h2>Contacto</h2>
-        <p>
-          Si tienes alguna pregunta o deseas más información, no dudes en
-          <a href="mailto:info@tecnologiaavanzada.com">contactarnos</a>.
-        </p>
-      </section>
+     
     </main>
+<marquee behavior="alternate" direction="right">
+
+  <div class="galeria">
+    <div class="img1-galeria"><img src="./imgs/html.webp" alt=""></div>
+    <div class="img1-galeria"><img src="./imgs/css.jfif" alt=""></div>
+    <div class="img1-galeria"><img src="./imgs/js.png" alt=""></div>
+    <div class="img1-galeria"><img src="./imgs/github.webp" alt=""></div>
+  </div>
+</marquee>
 
     <div class="container">
       <div class="parrafos">
@@ -551,6 +575,14 @@
         </p>
       </div>
     </div>
+
+    <section id="contacto" class="content-section2">
+      <h2>Contacto</h2>
+      <p>
+        Si tienes alguna pregunta o deseas más información, no dudes en
+        <a href="mailto:info@tecnologiaavanzada.com">contactarnos</a>.
+      </p>
+    </section>
 
     <footer>
       <p>&copy; 2024 Tecnología Avanzada. Todos los derechos reservados.</p>
